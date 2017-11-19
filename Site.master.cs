@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using mars;
 public partial class SiteMaster : MasterPage
 {
     private const string AntiXsrfTokenKey = "__AntiXsrfToken";
@@ -66,7 +66,7 @@ public partial class SiteMaster : MasterPage
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        string sov = EsiInterface.EsiInterface.GetJsonFromUri(@"https://esi.tech.ccp.is/latest/sovereignty/map/?datasource=tranquility");
     }
 
     protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
