@@ -66,7 +66,7 @@ public partial class SiteMaster : MasterPage
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        string sov = EsiInterface.EsiInterface.GetJsonFromUri(@"https://esi.tech.ccp.is/latest/sovereignty/map/?datasource=tranquility");
+        EsiInterface.EsiInterface.GetAllSystems();
     }
 
     protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
