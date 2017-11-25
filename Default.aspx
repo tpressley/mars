@@ -6,5 +6,5 @@
         <h1>Mars Timerboard</h1>
     </div>
 
-    <asp:ListBox ID="TaskDebugBox" runat="server"></asp:ListBox>
+    <asp:ListBox CssClass="TaskBox" ID="TaskDebugBox" runat="server"></asp:ListBox>
 </asp:Content>

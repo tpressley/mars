@@ -27,3 +27,11 @@ textarea {
         padding: 0;
     }
 }
+
+.TaskBox {
+    max-width:none;
+    position: absolute;
+    width: 75%;
+    height:75% !important;
+    max-height:none;
+}
